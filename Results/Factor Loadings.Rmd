@@ -1,0 +1,49 @@
+---
+title: "Untitled"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r library}
+library(psych)
+```
+
+
+```{r First Set}
+#Orthogonal 2
+print.psych(Ortho2, sort = TRUE)
+#Orthogonal 3
+print.psych(Ortho3, sort = TRUE)
+#Orthogonal 4
+print.psych(Ortho4, sort = TRUE)
+#Orthogonal 5
+print.psych(Ortho5, sort = TRUE)
+#Oblique 2
+print.psych(Oblique2, sort = TRUE)
+#Oblique 3
+print.psych(Oblique3, sort = TRUE)
+#Oblique 4
+print.psych(Oblique4, sort = TRUE)
+#Oblique 5
+print.psych(Oblique5, sort = TRUE)
+#Decided to remove the following: 14 AND 17 (Cross loaded on every factor structure and rotation)
+```
+
+```{r Second Set}
+#Orthogonal 3
+print.psych(Ortho3R, sort = TRUE)
+#Orthogonal 4
+print.psych(Ortho4R, sort = TRUE)
+#Orthogonal 5
+print.psych(Ortho5R, sort = TRUE)
+#Oblique 3
+print.psych(Oblique3R, sort = TRUE)
+#Oblique 4
+print.psych(Oblique4R, sort = TRUE)
+#Oblique 5
+print.psych(Oblique5R, sort = TRUE)
+#Decided to remove the following: 3 (Floating single question factor)
+```
